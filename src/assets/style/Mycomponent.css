@@ -1,0 +1,36 @@
+#Header {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 98vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#Header h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-count {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn button {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+}
