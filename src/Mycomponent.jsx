@@ -1,6 +1,7 @@
 import "/src/assets/style/Mycomponent.css";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import audio from "../public/Sweet.mp3";
+import Typewriter from "typewriter-effect";
 
 function Mycomponent() {
   const audioRef = useRef(null);
@@ -13,7 +14,15 @@ function Mycomponent() {
   return (
     <>
       <section id="Header">
-        <h1>Hello Everyone</h1>
+        <h1>
+          <Typewriter
+            options={{
+              strings: ["Hello", "Everyone"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </h1>
         <div className="btn">
           <button onClick={() => setCount((count) => count + 1)}>
             count is {count}
