@@ -1,6 +1,6 @@
 import "/src/assets/style/Mycomponent.css";
-import { useEffect, useRef, useState } from "react";
-import audio from "../public/Sweet.mp3";
+import { useRef, useState } from "react";
+import audio from "../src/assets/audio/NeeckDeep.mp4";
 import Typewriter from "typewriter-effect";
 
 function Mycomponent() {
@@ -32,7 +32,7 @@ function Mycomponent() {
         <p>&#9400; IRZAN</p>
       </section>
       <audio ref={audioRef} autoPlay>
-        <source src={audio} type="audio/mp3" />
+        <source src={audio} type="audio/mp4" />
         Your browser does not support the audio element.
       </audio>
     </>
